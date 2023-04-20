@@ -1,14 +1,21 @@
 package edu03;
 
-//Простий приклад класу без застосування інкапсуляції.
-//Приклад не є практичним і хорошим, наводиться просто для демонстрації
+/**
+ * A simple class example without using encapsulation.
+ * This example is not practical or good, it is provided only for demonstration.
+ */
 public class Animal {
+    /**
+     * Here you can see only the class fields without methods.
+     */
     public String breed;
     public String name;
     public double age;
 
-    //Тут ви бачите тільки поля класу без методів, дефолтний конструктор явно відсутній
-    // але він є, хоч ви його і не бачите
+    /**
+     * The default constructor is explicitly absent,
+     * but it exists, even if you don't see it.
+     */
     public static void main(String[] args) {
         Animal cat = new Animal();
         cat.breed = "Cat";
