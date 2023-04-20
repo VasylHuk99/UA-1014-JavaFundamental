@@ -2,7 +2,7 @@
  * A simple class example without using encapsulation.
  * This example is not practical or good, it is provided only for demonstration.
  */
-package com.softserve.edu03;
+package edu03;
 
 public class AnimalImproved {
     public String breed;
