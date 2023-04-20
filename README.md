@@ -2,13 +2,13 @@
 >This is repository of  UA-1014-JavaFundamental group.
 
 ## List of branches
-- **main** - tempate for new branches;
-- **dev** - examles from trainings;
+- **main** - template for new branches;
+- **dev** - examples from trainings;
 - **name** - students branches.
 ## Instruction:
 - Create new branch
-- create forlder on local disk;
-- open cmd or Git Bash and open new forlder;
+- create folder on local disk;
+- open cmd or Git Bash and open new folder;
 - clone repository 
 >git clone <https://github.com/OlhenShu/UA-1014-JavaFundamental.git>
 - change directory to own;
