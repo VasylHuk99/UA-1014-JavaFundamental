@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class homeworkOne {
+public class HomeworkOne {
     public static void main(String[] args) {
 
-        // areaAndPerimeterOfCircle();
+        areaAndPerimeterOfCircle();
         // meetPerson();
         // callCost();
     }
@@ -11,15 +11,18 @@ public class homeworkOne {
     public static void areaAndPerimeterOfCircle() {
 
         Scanner scann = new Scanner(System.in);
-
+        
         System.out.println("Please enter the radius:");
         double radius = scann.nextDouble();
-        System.out.println("\nThe perimeter of circle equals: " + (2 * Math.PI * radius));
-        System.out.println("\nThe area of circle equals: " + (Math.PI * radius * radius));
+        double perimeterResult = Math.round((2 * Math.PI * radius) * 100.0) / 100.0;
+        double areaResult = Math.round((Math.PI * radius * radius) * 100.0) / 100.0;
+        System.out.println("\nThe perimeter of circle equals: " + perimeterResult);
+        System.out.println("\nThe area of circle equals: " + areaResult);
+        scann.close();
     }
-
+    
     public static void meetPerson() {
-
+        
         String name = "";
         String adress = "";
 
@@ -30,12 +33,13 @@ public class homeworkOne {
         System.out.println("\nWhere do you live, " + name + "?");
         adress = scann.nextLine();
         System.out.println("Your name is " + name + " and you are from " + adress + ".");
+        scann.close();
     }
-
+    
     public static void callCost() {
-
+        
         Scanner scann = new Scanner(System.in);
-
+        
         int c1;
         int c2;
         int c3;
@@ -44,7 +48,7 @@ public class homeworkOne {
         int d3;
         int totalCost;
         int totalMinutes;
-
+        
         System.out.println("Please enter the call price to Germany:");
         c1 = scann.nextInt();
         System.out.println("Please enter the duration of call in minutes");
@@ -57,7 +61,7 @@ public class homeworkOne {
         c3 = scann.nextInt();
         System.out.println("Please enter the duration of call in minutes");
         d3 = scann.nextInt();
-
+        
         int costGermany = c1 * d1;
         int costUkraine = c2 * d2;
         int costSpain = c3 * d3;
@@ -68,5 +72,6 @@ public class homeworkOne {
         System.out.println("The call to Ukraine with duration of " + d2 + " minutes costs $" + costUkraine);
         System.out.println("The call to Spain with duration of " + d3 + " minutes costs $" + costSpain);
         System.out.println("The total cost for " + totalMinutes + " minutes is: $" + totalCost);
+        scann.close();
     }
 }
